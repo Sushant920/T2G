@@ -500,11 +500,11 @@ Just Upload your video to participate`;
               }}
               className="relative"
             >
-              <div className="absolute inset-0 bg-[#11ce6f] rounded-xl blur-lg opacity-30"></div>
+              <div className="absolute inset-0 bg-[#ffffff] rounded-xl blur-lg opacity-30"></div>
               <div className="relative bg-gradient-to-r from-[#000001] to-[#1a1a1a] p-3 rounded-xl border border-[#11ce6f]">
                 <button
                   onClick={() => setShowCTA(false)}
-                  className="absolute -top-2 -right-2 p-1 rounded-full bg-[#1a1a1a] border border-[#11ce6f]
+                  className="absolute -top-2 -right-2 p-1 rounded-full bg-[#1a1a1a] border border-[#adbab3]
                      hover:bg-[#242424] transition-colors"
                 >
                   <XMarkIcon className="w-4 h-4 text-[#11ce6f]" />
@@ -535,12 +535,12 @@ Just Upload your video to participate`;
               {message.isTyping ? (
                 <TypingIndicator />
               ) : (
-                <div className={`max-w-[70%] rounded-xl p-3 ${message.isUser ? "bg-[#11ce6f] text-[#fbf8fe]" : "bg-[#000001] text-[#fbf8fe]"}`}>
+                <div className={`max-w-[70%] rounded-xl p-3 ${message.isUser ? "bg-[#c7dbd1] text-[#fbf8fe]" : "bg-[#000001] text-[#fbf8fe]"}`}>
                   {message.text}
                   {message.isNFTMinted && (
                     <button
                       onClick={handleViewNFT}
-                      className="mt-2 flex items-center gap-2 px-3 py-1.5 bg-[#11ce6f] rounded-lg hover:bg-opacity-90 transition-all"
+                      className="mt-2 flex items-center gap-2 px-3 py-1.5 bg-[#ecf9f3] rounded-lg hover:bg-opacity-90 transition-all"
                     >
                       <GiftIcon className="w-4 h-4" />
                       <span>View NFT</span>
@@ -568,7 +568,7 @@ Just Upload your video to participate`;
                        shadow-md hover:shadow-lg"
             >
               <TrophyIcon className="w-5 h-5 text-[#11ce6f]" />
-              <div className="absolute inset-0 bg-[#11ce6f] rounded-xl opacity-0 group-hover:opacity-5 transition-opacity"></div>
+              <div className="absolute inset-0 bg-[#929c97] rounded-xl opacity-0 group-hover:opacity-5 transition-opacity"></div>
             </button>
 
             <div className="relative flex-1">
@@ -592,14 +592,14 @@ Just Upload your video to participate`;
                 <button
                   type="button"
                   onClick={handleVideoUploadClick}
-                  className="p-2 rounded-xl bg-[#11ce6f] text-[#fbf8fe] hover:opacity-90 transition-opacity"
+                  className="p-2 rounded-xl bg-[#cad3ce] text-[#fbf8fe] hover:opacity-90 transition-opacity"
                   disabled={isLoading}
                 >
                   <VideoCameraIcon className="w-5 h-5" />
                 </button>
                 <button
                   type="submit"
-                  className="p-2 rounded-xl bg-[#11ce6f] text-[#fbf8fe] hover:opacity-90 transition-opacity"
+                  className="p-2 rounded-xl bg-[#c1c5c3] text-[#fbf8fe] hover:opacity-90 transition-opacity"
                   disabled={isLoading}
                 >
                   {isLoading ? <span className="animate-spin">⌛</span> : <PaperAirplaneIcon className="w-5 h-5" />}

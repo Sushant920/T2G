@@ -75,7 +75,7 @@ export const NewHeader = () => {
                                     return (
                                         <button
                                             onClick={openConnectModal}
-                                            className="connect-button bg-gradient-to-r from-[#11ce6f] to-[#3b82f6] px-4 py-2 rounded-lg text-white hover:opacity-90 transition-opacity"
+                                            className="connect-button bg-gradient-to-r from-[#000000] to-[#000000] px-4 py-2 rounded-lg text-white hover:opacity-90 transition-opacity"
                                         >
                                             Connect Wallet
                                         </button>
@@ -110,7 +110,7 @@ export const NewHeader = () => {
                                             className="connected-status flex items-center gap-2 bg-[#2d2c2e] px-4 py-2 rounded-lg hover:bg-[#3d3c3e] transition-colors"
                                         >
                                             <span className="text-white text-sm">{account.displayName}</span>
-                                            <span className="text-[#11ce6f] text-sm">{account.displayBalance}</span>
+                                            <span className="text-[#ffffff] text-sm">{account.displayBalance}</span>
                                         </button>
                                     </div>
                                 );

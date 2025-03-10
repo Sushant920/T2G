@@ -30,7 +30,7 @@ const StepComponent: FC<StepComponentProps> = ({ totalSteps = 6000 }) => {
       <div className="relative flex items-center">
         <div className="relative w-32 h-3 bg-[#000001] rounded-full overflow-hidden">
           <div
-            className="absolute top-0 left-0 h-full bg-[#11ce6f] rounded-full transition-all duration-300"
+            className="absolute top-0 left-0 h-full bg-[#ffffff] rounded-full transition-all duration-300"
             style={{ width: `${percentage}%` }}
           />
         </div>
@@ -38,9 +38,9 @@ const StepComponent: FC<StepComponentProps> = ({ totalSteps = 6000 }) => {
           className="absolute -top-8 transition-all duration-300 pointer-events-none"
           style={{ left: `${percentage}%` }}
         >
-          <div className="relative bg-[#11ce6f] text-[#fbf8fe] text-xs px-2 py-1 rounded-md -translate-x-1/2">
+          <div className="relative bg-[#ffffff] text-[#fbf8fe] text-xs px-2 py-1 rounded-md -translate-x-1/2">
             {percentage}%
-            <div className="absolute h-2 w-2 bg-[#11ce6f] rotate-45 bottom-[-4px] left-1/2 -translate-x-1/2" />
+            <div className="absolute h-2 w-2 bg-[#ffffff] rotate-45 bottom-[-4px] left-1/2 -translate-x-1/2" />
           </div>
         </div>
       </div>

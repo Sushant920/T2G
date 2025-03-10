@@ -91,13 +91,13 @@ const Home: NextPage = () => {
                 repeat: Infinity,
                 ease: "easeInOut",
               }}
-              className="text-[#11ce6f] text-2xl"
+              className="text-[#ffffff] text-2xl"
             >
               ↓
             </motion.div>
             <motion.span
               whileHover={{ scale: 1.05 }}
-              className="text-[#11ce6f] font-bold bg-[#2d2c2e] px-6 py-3 rounded-full
+              className="text-[#ffffff] font-bold bg-[#2d2c2e] px-6 py-3 rounded-full
                        shadow-[0_0_15px_rgba(17,206,111,0.2)] border border-[#11ce6f33]
                        backdrop-blur-lg"
             >
@@ -131,15 +131,15 @@ const Home: NextPage = () => {
                   repeat: Infinity,
                   repeatType: "reverse"
                 }}
-                className="absolute inset-0 bg-gradient-to-r from-transparent via-[#11ce6f20] to-transparent"
+                className="absolute inset-0 bg-gradient-to-r from-transparent via-[#00000020] to-transparent"
               />
             </motion.div>
             <h1 className="text-center mb-4">
-              <span className="block text-4xl font-bold mb-2 bg-gradient-to-r from-[#11ce6f] to-[#3b82f6] text-transparent bg-clip-text">
-                Welcome to StakeFit
+              <span className="block text-4xl font-bold mb-2 bg-gradient-to-r from-[#ffffff] to-[#ffffff] text-transparent bg-clip-text">
+                Welcome to Train2Gain
               </span>
-              <span className="text-xl text-[#a3a2a7]">
-                A Bet on your Fitness
+              <span className="text-xl text-[#ffffff]">
+                A Spike on  Fitness
               </span>
             </h1>
           </motion.div>
@@ -193,7 +193,7 @@ const Home: NextPage = () => {
           >
             {/* How It Works */}
             <div className="bg-[#2d2c2e] rounded-xl p-6 border border-[#11ce6f33]">
-              <h2 className="text-2xl font-bold mb-4 bg-gradient-to-r from-[#11ce6f] to-[#3b82f6] text-transparent bg-clip-text">
+              <h2 className="text-2xl font-bold mb-4 bg-gradient-to-r from-[#000000] to-[#000000] text-transparent bg-clip-text">
                 How StakeFit Works
               </h2>
               <div className="space-y-4 text-[#a3a2a7]">
@@ -205,7 +205,7 @@ const Home: NextPage = () => {
 
             {/* Tips Section */}
             <div className="bg-[#2d2c2e] rounded-xl p-6 border border-[#11ce6f33]">
-              <h2 className="text-2xl font-bold mb-4 bg-gradient-to-r from-[#11ce6f] to-[#3b82f6] text-transparent bg-clip-text">
+              <h2 className="text-2xl font-bold mb-4 bg-gradient-to-r from-[#ffffff] to-[#ffffff] text-transparent bg-clip-text">
                 Fitness Tips
               </h2>
               <div className="space-y-4 text-[#a3a2a7]">

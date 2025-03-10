@@ -70,7 +70,7 @@ const StakeCard: React.FC<StakeCardProps> = ({ contractAddress, contractABI }) =
   return (
     <div className="card bg-dark-surface shadow-neon-glow w-full max-w-md mx-auto">
       <div className="card-body">
-        <h2 className="card-title text-neon-green mb-4">Stake ETH</h2>
+        <h2 className="card-title text-white mb-4">Stake ETH</h2>
         
         {/* Network Warning */}
         {currentChainId !== baseSepolia.id && isConnected && (

@@ -1,5 +1,5 @@
 .header-container {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.153);
     backdrop-filter: blur(4px);
 }
 
@@ -8,7 +8,7 @@
 }
 
 .network-selector-btn:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.147);
 }
 
 .connected-status {
@@ -16,9 +16,9 @@
 }
 
 .connected-status:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgb(0, 0, 0);
 }
 
 .profile-pic {
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    border: 2px solid rgb(255, 255, 255);
 }
