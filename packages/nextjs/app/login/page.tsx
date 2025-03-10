@@ -11,8 +11,8 @@ const LoginPage = () => {
 
   const handleSignUp = () => {
     setIsLoading(true);
-    // const localUrl = "http://localhost:3000";
-    const localUrl = "https://62a2-14-195-142-82.ngrok-free.app"
+    const localUrl = "http://localhost:3000";
+    // const localUrl = "https://62a2-14-195-142-82.ngrok-free.app"
     window.location.href = `https://small-mouse-2759.arnabbhowmik019.workers.dev/google/auth?redirect_url=${encodeURIComponent(localUrl)}/`;
   };
 
@@ -56,11 +56,11 @@ const LoginPage = () => {
             transition={{ delay: 0.4 }}
           >
             <h1 className="text-4xl font-bold mb-2">
-              <span className="bg-gradient-to-r from-[#11ce6f] to-[#3b82f6] text-transparent bg-clip-text">
-                Welcome to StakeFit
+              <span className="bg-gradient-to-r from-[#ffd727] to-[#ff1717] text-transparent bg-clip-text">
+                Welcome to Train2Gain
               </span>
             </h1>
-            <p className="text-[#a3a2a7] text-lg">A bet on your Fitness</p>
+            <p className="text-[#ff1e1e] text-lg">A Spike on Fitness</p>
           </motion.div>
         </div>
 

@@ -25,7 +25,7 @@ const StatsComponent: FC<StatsComponentProps> = ({ stepsGoal = 8000 }) => {
       <div className="flex flex-col">
         {/* Steps */}
         <div className="flex items-center gap-2">
-          <div className="w-3 h-3 rounded-full bg-[#11ce6f]" />
+          <div className="w-3 h-3 rounded-full bg-[#ffffff]" />
           <div className="flex items-baseline gap-1">
             <span className="text-[#fbf8fe] text-xl font-medium">{steps.toLocaleString()}</span>
             <span className="text-[#a3a2a7] text-sm">steps</span>
@@ -43,19 +43,19 @@ const StatsComponent: FC<StatsComponentProps> = ({ stepsGoal = 8000 }) => {
 
         {/* Calories */}
         <div className="flex items-center gap-2">
-          <div className="w-3 h-3 rounded-full bg-[#ec4899]" />
+          <div className="w-3 h-3 rounded-full bg-[#ff1c1c]" />
           <div className="flex items-baseline gap-1">
             <span className="text-[#fbf8fe] text-xl font-medium">{calories}</span>
-            <span className="text-[#a3a2a7] text-sm">kcal</span>
+            <span className="text-[#ffffff] text-sm">kcal</span>
           </div>
         </div>
       </div>
-
-      {/* Progress Circles */}
+{/* 
+      Progress Circles */}
       <div className="w-20 h-full ml-auto">
         <svg viewBox="0 0 100 100" className="transform -rotate-90 w-full h-full">
           {/* Background circles */}
-          <circle
+          {/* <circle
             cx="50"
             cy="50"
             r="40"
@@ -70,18 +70,18 @@ const StatsComponent: FC<StatsComponentProps> = ({ stepsGoal = 8000 }) => {
             fill="none"
             stroke="#3b82f622"
             strokeWidth="8"
-          />
-          <circle
+          /> */}
+          {/* <circle
             cx="50"
             cy="50"
             r="20"
             fill="none"
             stroke="#11ce6f22"
             strokeWidth="8"
-          />
+          /> */}
 
           {/* Progress circles */}
-          <circle
+          {/* <circle
             cx="50"
             cy="50"
             r="40"
@@ -90,8 +90,8 @@ const StatsComponent: FC<StatsComponentProps> = ({ stepsGoal = 8000 }) => {
             strokeWidth="8"
             strokeDasharray={`${(calories / 2000) * 251.2} 251.2`}
             strokeLinecap="round"
-          />
-          <circle
+          /> */}
+          {/* <circle
             cx="50"
             cy="50"
             r="30"
@@ -100,8 +100,8 @@ const StatsComponent: FC<StatsComponentProps> = ({ stepsGoal = 8000 }) => {
             strokeWidth="8"
             strokeDasharray={`${(currentHour / 24) * 188.4} 188.4`}
             strokeLinecap="round"
-          />
-          <circle
+          /> */}
+          {/* <circle
             cx="50"
             cy="50"
             r="20"
@@ -110,7 +110,7 @@ const StatsComponent: FC<StatsComponentProps> = ({ stepsGoal = 8000 }) => {
             strokeWidth="8"
             strokeDasharray={`${(steps / stepsGoal) * 125.6} 125.6`}
             strokeLinecap="round"
-          />
+          /> */}
         </svg>
       </div>
     </div>
