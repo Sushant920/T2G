@@ -218,7 +218,7 @@ def test():
     }],
     method="updateDailySteps",
     args={
-        "wallet": "0x38E4eFC439Ef728716511817F0a508F53252c2b9",  # Replace with the wallet address
+        "wallet": "0x4797B03BdcD7DfE4a3b2DDe57685088cD740E05F",  # Replace with the wallet address
         "stepCount": str(int(10000))  # Example step count, replace with actual steps
     }
 )
@@ -230,19 +230,7 @@ def test():
 
 @app.route('/claim', methods=['GET'])
 def claim():
-    #wallet = Wallet.create()
     address1 = wallet.default_address
-    # Create a faucet request that returns a Faucet transaction, which can be used to retrieve the transaction hash.
-    #faucet_transaction = wallet.faucet()
-
-    # Wait for the faucet transaction to land on-chain.
-    #faucet_transaction.wait()
-
-    #print(f"Faucet transaction successfully completed: {faucet_transaction}")
-
-    #faucet_transaction.transaction_hash
-    #balance = wallet.balances()
-    #print(balance)
     
     invocation = wallet.invoke_contract(
     contract_address="0x52dE6508FECCA4d712b75b0bD018a621EaF2d734",  # Replace with actual contract address
@@ -258,7 +246,7 @@ def claim():
     }],
     method="claimStakeAndMintNFT",
     args={
-        "wallet": "0x1346cc580Bffe1cB9948a056BDDCd893E6C5d5B6",  # Replace with the wallet address
+        "wallet": "0x4797B03BdcD7DfE4a3b2DDe57685088cD740E05F",  # Replace with the wallet address
         "imageUrl": "https://cdn.prod.website-files.com/6615636a03a6003b067c36dd/661ffd0dbe9673d914edca2d_6423fc9ca8b5e94da1681a70_Screenshot%25202023-03-29%2520at%252010.53.43.jpeg"  # Replace with actual image URL
     }
     )
@@ -274,7 +262,7 @@ def transfer():
     balance = wallet.balances()
     print(balance)
     
-    transfer = wallet.transfer(0.009, "eth", "0x1346cc580Bffe1cB9948a056BDDCd893E6C5d5B6")
+    transfer = wallet.transfer(0.009, "eth", "0x4797B03BdcD7DfE4a3b2DDe57685088cD740E05F")
     transfer.wait()
     print(transfer)
     return jsonify({"message": "Hello World"})
